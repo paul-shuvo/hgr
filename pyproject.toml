@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hgr"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mediapipe = "^0.10.9"
+notebook = "^7.0.6"
+torch = {version = "^2.1.2+cu121", source = "pytorch"}
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
